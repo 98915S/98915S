@@ -1,0 +1,731 @@
+/*///////////////////////////////////////// EGEN //////////////////////////////////////*/
+
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: rgba(242, 242, 242, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    
+    overflow-x: hidden;
+    user-select: none;
+
+    margin: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #303030; 
+}
+
+/*/////////////////////////////// STICKY HEADER /////////////////*/
+
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 100; 
+
+    display: flex;
+    gap: 7vw;
+
+    background-color:rgb(22, 22, 22);
+    padding: 5vh;
+}
+
+.sticky-header img {
+
+    position: absolute;
+    top: 10%;
+    left: 2vw;
+    height: 80%;
+    margin: 0
+}
+
+#header-padder{
+    padding-left: 25%;
+}
+
+.sticky-header a{
+    display: block;
+    margin: 0 auto;
+
+    color: white;
+    font-size: 3vh;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    transition: color 0.3s;
+
+}
+
+
+
+.sticky-header a:hover{
+    color: gray;
+}
+
+
+/*/////////////////////////////// STICKY END /////////////////*/
+
+.hero1 {
+    width: 100%;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.hero1 img {
+    width: 100vw;
+    border-bottom: 5px solid rgba(132, 135, 140, 100);
+}
+
+.hero1 h1 {
+    /*pos*/
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    margin: 0;
+
+    /*style*/
+    font-size: 7vw;
+}
+
+
+/*Sell squares*/
+.selection {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.sellXC90 {
+    max-width: 90%;
+    margin: 30px;
+    border: 1px solid rgba(132, 135, 140, 100);
+
+    box-shadow: 3px 3px 5px;
+    transition: box-shadow 0.3s;
+
+}
+
+.sellXC90:hover {
+    box-shadow: none;
+}
+
+.sellXC90 img {
+    width: 100%;
+}
+
+.sellXC90 p {
+    margin: 0;
+    text-align: center;
+    padding-bottom: 7px;
+
+    font-size: 5vh;
+    font-weight: bold;
+    color: black;
+    border-bottom: 5px solid rgba(132, 135, 140, 100);
+}
+
+.alink{
+    text-decoration: none;
+}
+
+/*info*/
+
+.info {
+    background-color: rgb(165, 165, 165);
+    border: 5px gray solid;
+
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    position: relative;
+    max-width: 90%;
+    padding: 20px;
+}
+
+
+.info h1 {
+    border-bottom: 3px solid rgb(27, 27, 27);
+    margin-right: 10px;
+}
+
+#inforeadmore {
+    margin-bottom: 0;
+
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#inforeadmore:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+
+
+/*Showcase*/
+
+.showcase {
+    margin: 0 auto;
+    position: relative;
+    max-width: 90%;
+    padding: 10px;
+
+    background-color: rgb(132, 135, 140);
+
+}
+
+#showcasetopimg {
+    max-width: 100%;
+}
+
+#showcasebottom {
+    display: flex;
+    position: relative;
+
+}
+
+#showcasebottom1 {
+    width: 49%;
+}
+
+#showcasebottom2 {
+    width: 49%;
+    position: absolute;
+    right: 0;
+}
+
+/*Signature*/
+
+.signature-sect{
+    position: relative;
+}
+
+#signature{
+    position: absolute;
+    bottom: 0;
+    left: 2vw;
+
+    background-image: linear-gradient(45deg, rgb(255, 0, 149),rgb(126, 0, 126), rgb(77, 0, 77));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+
+/*Footer*/
+
+footer {
+    background-color: rgb(27, 27, 27);
+    color: rgb(199, 199, 199);
+
+    width: 100%;
+}
+
+footer p {
+    margin-left: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+}
+
+#Volvo-footer {
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#trademark {
+    text-align: center;
+    color: rgb(85, 85, 85);
+
+    margin: 0px;
+}
+
+@media screen and (min-width: 769px) {
+
+    /*STICKY HEADER*/
+
+    #header-padder{
+        padding-left: 1%;
+    }
+
+    .sticky-header a{
+        font-size: 4vh;
+    }
+
+    /*STICKY HEADER END*/
+
+
+    /*TOP IMG*/
+
+    .hero1 h1 {
+        /*pos*/
+        position: absolute;
+        top: 70px;
+        left: 40px;
+
+        /*style*/
+        font-size: 7vw;
+    }
+
+    /*SELECTION*/
+
+    .selection {
+        flex-direction: row;
+    }
+
+
+    /*INFOSHOW-FLEX*/
+
+
+
+    /*info*/
+
+    .info {
+
+        max-width: 90%;
+
+    }
+
+
+}
+
+@media screen and (min-width: 2100px){
+    
+    .sellXC90{
+        width: 130%;
+    }
+
+}
+
+
+
+
+/*///////////////////////////////////////////// BUY XC90 ////////////////////////////////////////////////*/
+
+.image-price-flex {
+    background-color: rgb(22, 22, 22);
+    padding-bottom: 20px
+}
+
+#buy-button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    width: 80%;
+
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 3vh;
+}
+
+.buyXC90image img {
+    width: 90vw;
+
+    padding-top: 2vh;
+    margin: 0 auto;
+    display: block;
+}
+
+.XC90price {
+    padding-bottom: 0.1vh;
+}
+
+.XC90price h2 {
+    color: white;
+    font-size: 7vw;
+    font-weight: bold;
+
+    text-align: center;
+    margin: 5px;
+    margin-top: 20px;
+}
+
+.XC90price p {
+    color: white;
+    font-size: 5vw;
+    font-weight: 400;
+
+    max-width: 90%;
+
+    display: block;
+    margin: 0 auto
+}
+
+
+.XC90info {
+    background-color: rgb(165, 165, 165);
+
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.XC90info p {
+    padding: 5vw;
+
+    font-weight: bold;
+    border: gray 5px solid;
+}
+
+.buyXC90video video {
+    max-width: 90%;
+    margin: 0;
+    border: 5px gray solid;
+
+    display: block;
+    margin: 0 auto;
+
+}
+
+@media screen and (min-width: 769px) {
+
+    .image-price-flex {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+
+    .buyXC90image {
+        padding-top: 1vh;
+        padding-left: 2vw;
+
+    }
+
+    .buyXC90image img {
+        width: 60vw
+    }
+
+    .XC90price {
+        padding-bottom: 0.1vh;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .XC90price p {
+        color: white;
+        font-size: 2vw;
+        font-weight: 400;
+
+        max-width: 90%;
+
+        display: block;
+        margin: 0 auto
+    }
+
+    .XC90price h2 {
+        color: white;
+        font-size: 5vw;
+
+        text-align: center;
+        margin: 5px;
+        margin-top: 20px;
+    }
+
+
+
+
+}
+
+
+
+
+/*///////////////PAYMENT///////////////////*/
+
+.pay-head{
+
+    font-size: 5vh;    
+    text-align: center;
+}
+
+.pay-head h1{
+    margin: 4vh;
+}
+
+.textfields{
+    padding-top: 20px;
+}
+
+.payment{
+    width: fit-content;
+    padding: 30px;
+    display: block;
+    margin: 0 auto;
+    
+    background-color: gray;
+    border: 5px solid gray;
+}
+
+.payment input{
+
+    border: none;
+    outline: none;
+    height: 5vh;
+    font-size: 3vh;
+}
+
+.payment-button button{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 4vh;
+
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    width: 70%;
+
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 3vh;
+    
+}
+
+@media screen and (min-width: 769px) {
+
+    .payment input{
+
+        border: none;
+        outline: none;
+        height: 5vh;
+        font-size: 4vh;
+    }
+
+}
+
+/*///////////////////////////////// LASMER //////////////////////////////////*/
+
+.lasmer-h1 h1{
+    font-size: 6vw;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+
+    border-bottom: #303030 5px solid;
+    max-width: 90%;
+}
+
+.lasmer1 {
+    background-color: rgb(165, 165, 165);
+    padding: 3vh;
+    border: 5px solid gray;
+    
+    font-weight: 500;
+    font-size: 35w;
+    
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+
+    margin-top: 5vh;
+    
+}
+
+.lasmer1 p {
+
+    display: inline-block;
+    width: 100%;
+    padding: 2vw;
+
+}
+
+.lasmer1 img {
+
+    display: inline-block;
+    width: 100%;
+
+    border: 5px solid gray;
+
+}
+
+.lasmer2 {
+    background-color: rgb(165, 165, 165);
+    padding: 3vh;
+    border: 5px solid gray;
+
+    font-weight: 500;
+    font-size: 35w;
+    
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+
+    margin-top: 5vh;
+    
+}
+
+.lasmer2 p {
+
+    display: inline-block;
+    width: 100%;
+    padding: 2vw;
+
+}
+
+.lasmer2 img {
+
+    display: inline-block;
+    width: 100%;
+
+    border: 5px solid gray;
+}
+
+@media screen and (min-width: 769px){
+
+
+    .lasmer1 {
+
+        flex-direction: row;
+
+        font-size: 1.7vw;
+    }
+    
+    .lasmer1 p {
+    
+        width: 50%;
+    }
+    
+    .lasmer1 img {
+    
+        width: 50%;
+    }
+    
+    .lasmer2 {
+
+        flex-direction: row;
+
+        font-size: 1.7vw;
+    }
+    
+    .lasmer2 p {
+    
+        width: 50%;
+        padding: 2vw;
+    }
+    
+    .lasmer2 img {
+
+        width: 50%;
+    }
+
+}
+
+
+
+/*///////////////////////////////////// BILAR //////////////////////////////////////*/
+
+
+.oo{
+
+    font-size: 1px;
+}
+
+.bilar-XC90{
+    display: flex;
+    flex-direction: column ;
+    padding: 2vw;
+    margin: 1vw;
+    margin-bottom: 2vh;
+    background-color: rgb(22, 22, 22);
+
+
+}
+
+.bilar-XC90-img{
+    padding: 2vw;
+    
+}
+
+.bilar-XC90-img img{
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.buy-button-bilar{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    width: 80%;
+
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 3vh;
+}
+
+.bilar-XC90-text{
+    font-size: 4vw;
+    color: rgba(242, 242, 242, 255);
+
+}
+
+@media screen and (min-width: 769px){
+    .bilar-XC90{
+        flex-direction: row;
+    }
+
+    .bilar-XC90-img{
+        width: 80%;
+    }
+    
+    .bilar-XC90-img img{
+        width: 100%;
+    }
+
+    .bilar-XC90-text{
+        font-size: 2.3vw;
+    }
+
+}
+
+
+
+/*4K edits///////////////////////////////////*/
+
+@media screen and (min-width: 1025px){
+    body{
+        font-size: 2vw;
+        font-weight: 500;
+    }
+
+    #Volvo-footer{
+        font-size: 3vw;
+    }
+
+    #inforeadmore{
+        font-size: 3vw;
+    }
+
+}
+
